@@ -20,8 +20,8 @@ enable :sessions
   end
 
   get '/play' do
-    # @player1 = session[@player1]
-    # @player2 = session[@player2]
+    @player1 = session[:player1]
+    @player2 = session[:player2]
     erb(:play)
   end
   # start the server if ruby file executed directly
